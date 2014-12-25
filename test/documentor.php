@@ -1,6 +1,6 @@
 <?php
-require_once __DIR__ . '/../vendor/autoload.php';
-
+require_once __DIR__ . '/../src/autoload.php';
+header('Content-type: text/plain; charset: utf-8');
 $generator = Faker\Factory::create();
 $generator->seed(1);
 $documentor = new Faker\Documentor($generator);
